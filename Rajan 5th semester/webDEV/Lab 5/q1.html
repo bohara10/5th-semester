@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multiplication Table</title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+    td, th {
+      border: 1px solid #000;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Multiplication Table (10x10)</h2>
+
+<table>
+  <tr>
+    <th>&times;</th>
+    <?php
+      for ($i = 1; $i <= 10; $i++) {
+        echo "<th>$i</th>";
+      }
+    ?>
+  </tr>
+  <?php
+    for ($i = 1; $i <= 10; $i++) {
+      echo "<tr>";
+      echo "<th>$i</th>"; // Row header
+      for ($j = 1; $j <= 10; $j++) {
+        echo "<td>" . ($i * $j) . "</td>";
+      }
+      echo "</tr>";
+    }
+  ?>
+</table>
+
+</body>
+</html>

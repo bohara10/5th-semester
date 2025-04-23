@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Table Layout</title>
+    <style>
+        /* Container for the table */
+        .table {
+            display: grid;
+            width: 600px;
+            border: 1.5px solid black;
+            grid-template-rows: auto auto auto; /* Three rows */
+        }
+
+        /* First row: 2 columns (first is 2x larger) */
+        .row1 {
+            display: grid;
+            grid-template-columns: 2fr 1fr; /* First column is 2x larger */
+            border-bottom: 1.5px solid black;
+        }
+
+        /* Second row: 2 columns (first is 3x smaller) */
+        .row2 {
+            display: grid;
+            grid-template-columns: 1fr 3fr; /* First column is 3x smaller */
+            border-bottom: 1.5px solid black;
+        }
+
+        /* Third row: 3 columns */
+        .row3 {
+            display: grid;
+            grid-template-columns: 1fr 3fr 2fr; /* 1st is 3x smaller, 3rd is 1.5x smaller */
+        }
+
+        /* Common styling for all cells */
+        .cell {
+            border-right: 1.5px solid black;
+            padding: 20px;
+            
+            background-color: white;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="table">
+        <!-- First row -->
+        <div class="row1">
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+        <!-- Second row -->
+        <div class="row2">
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+        <!-- Third row -->
+        <div class="row3">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+    </div>
+
+</body>
+</html>

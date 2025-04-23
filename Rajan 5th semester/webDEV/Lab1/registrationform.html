@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form action="/submit-registration" method="post">
+        <div>
+        <label for="text" >Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <br>
+        <div>
+            <label for="text">Email:</label>
+            <input type="text" id="Email" name="Email" placeholder=" Enter your email" required >
+        </div>
+        <br>
+ 
+        <div>
+            <label for="password"> Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="Male">Male</label>
+            <input type="radio" id="Male" name="gender" value="Male">
+            <label for="Female">Female</label>
+            <input type="radio" id="Female" name="gender" value="Female">
+        </div>
+        <div>
+            <label for="text">hobies:</label>
+            <input type="checkbox" id="hobby1">
+            <label for="hobby1">sports</label>
+            
+            <input type="checkbox" id="hobby2">
+            <label for="hobby2">hiking</label>
+            <input type="checkbox" id="hobby3">
+            <label for="hobby3">travelling</label>
+          
+    
+        </div>
+        <br>
+        <input type="submit" value="Submit"> 
+    </form>
+</body>
+</html>

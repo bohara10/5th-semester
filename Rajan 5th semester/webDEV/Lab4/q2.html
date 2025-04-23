@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial of number</title>
+</head>
+<body>
+    <script >
+        // Recursive Function to Calculate Factorial
+const factorial = (n) => {
+    // Base Case: Factorial of 0 or 1 is 1
+    if (n === 0 || n === 1) return 1;
+
+    // Recursive Case: n * factorial of (n - 1)
+    return n * factorial(n - 1);
+};
+
+// Example Usage
+const number = parseInt(prompt("Enter a number:"));
+const result = factorial(number);
+console.log(`The factorial of ${number} is: ${result}`);
+
+    </script>
+</body>
+</html>

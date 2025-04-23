@@ -1,0 +1,93 @@
+body{
+    display: flex;
+    justify-content: center;
+    
+}
+.outer-box{
+    box-sizing:border-box;
+    width: 1000px;
+    height: 700px;
+    padding: 100px;
+   
+    background-color: #517066;
+    font-family: Arial, sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.inner-box{
+    box-sizing: border-box;
+    width:900px;
+    height: 600px;
+    padding: 150px;
+ 
+    background-color: #828685;
+    font-family: Arial, sans-serif;
+    
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+
+label {
+
+    color: #ddd;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 10px;
+    border: none;
+    border-radius: 5px;
+}
+.gender{
+
+    box-sizing: content-box;
+    width: 260px;
+    height: 15px;
+    padding: 5px;
+    border: solid darkslategray 2px;
+    text-align: center; 
+    
+    background-color: rgba(144, 176, 205, 0.982);
+}
+
+.hobby{
+    box-sizing: content-box;
+    width: 250px;
+    height: 50px;
+    padding: 5px;
+    border: solid darkslategrey;
+
+    
+    text-align:center;
+
+    background-color: rgba(144, 176, 205, 0.982);
+    cursor: pointer;
+}
+
+input[type="submit"]{
+    box-decoration-break: clone; 
+    width: 260px;
+    height: 30px;
+    border-radius: 15px;
+    padding: 5px;
+    
+    border: solid darkslategray 2px;
+    text-align: center;
+
+    background-color: rgb(5, 81, 128);
+    
+}
+
